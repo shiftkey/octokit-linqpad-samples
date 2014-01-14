@@ -13,7 +13,7 @@ var client = new GitHubClient(new ProductHeaderValue("Bay.NET"));
 var repository = await client.Repository.Get("octokit", "octokit.net");
 Console.WriteLine("Octokit.net can be found at {0}\n", repository.HtmlUrl);
 
-Console.WriteLine("It currently has {0} watchers and {0} forks\n", 
+Console.WriteLine("It currently has {0} watchers and {1} forks\n", 
     repository.WatchersCount,
     repository.ForksCount);
 
